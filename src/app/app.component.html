@@ -1,4 +1,4 @@
-<div>
+<div style="text-align: center">
   <img
     src="../assets/logo.png"
     alt="LCO Logo"
@@ -27,7 +27,7 @@
       <li *ngFor="let item of list">
         <input type="checkbox" name="isDone" [(ngModel)]="item.isDone" />
         {{ item.value }}
-        <button class="btn">Delete</button>
+        <button class="btn" (click)="deleteItem(item.id)">Delete</button>
       </li>
     </ul>
   </div>

@@ -31,6 +31,6 @@ export class AppComponent {
   }
 
   deleteItem(id: number){
-    this.list = this.list.filter(item => item.id !==id);
+    this.list = this.list.filter(item => item.id !== id);
   }
 }
