@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 import { Todo } from "./todo";
 
 @Component({
@@ -33,6 +32,5 @@ export class AppComponent {
 
   deleteItem(id: number){
     this.list = this.list.filter(item => item.id !==id);
-    
   }
 }
